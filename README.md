@@ -1,10 +1,12 @@
 # TrainSchedule
 
-Train Schedule
+
 Purpose:  
 Create a train schedule application that incorporates a Firebase hosted database at captures the arrival and departure times of the trains. Using these times, the arrival time of the next train of that particular train, say the (A-Train) is calculated and shown on screen. 
 How it works:
+
 1.)	The user is presented a Train Schedule webpage.
+
 2.)	The user enters the following information and (“clicks”) the submit button.
 a.	Train Name
 b.	Destination
