@@ -29,7 +29,8 @@ How it works:
 Note: Each train name that is entered will display the next train arrival information in the
       top table of arrivals.
 
-Technology used:
+Technology used
+
 1.)	Javascript along with the jQuery library
 
 2.)	HTML
