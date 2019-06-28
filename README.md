@@ -13,8 +13,8 @@ How it works:
 
 1.)	The user is presented a Train Schedule webpage.
 
-2.)	The user enters the following information   
-     and (“clicks”) the submit button.
+2.)	The user enters the following information and 
+     (“clicks”) the submit button.
     a.	Train Name
     b.	Destination
     c.	First time of that train for that day in military format (00:00)
@@ -31,9 +31,13 @@ Note: Each train name that is entered will display the next train arrival inform
 
 Technology used:
 1.)	Javascript along with the jQuery library
+
 2.)	HTML
+
 3.)	BootStrap 
+
 4.)	Moment.js
+
 5.)	Firebase (database)
 
 
