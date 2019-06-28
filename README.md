@@ -30,12 +30,16 @@ Note: Each train name that is entered will display the next train arrival inform
       top table of arrivals.
 
 Technology used:
-
 1.)	Javascript along with the jQuery library
+
 2.)	HTML
+
 3.)	BootStrap 
+
 4.)	Moment.js
+
 5.)	Firebase (database)
+
 
 
 ** This app was made responsive for cell-phones and small tablets.
