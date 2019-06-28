@@ -19,7 +19,6 @@
   //Step - 2 Assign a variable to the database and define all Global variabls
   var database = firebase.database();
   
-   
   
   //Setup Listener for "Button Submit" ('click')
   //Step - 3 
@@ -58,45 +57,42 @@
            $('#train-time-input').val("");
            $('#frequency-input').val("")
   
-           console.log("train name input: " +trainName);
-           console.log("Destination input: " +Dest);
-           console.log("TrainTime input: " +trainTime);
-           console.log("Frequency input: " +frequency);
+           // console.log("train name input: " +trainName);
+           // console.log("Destination input: " +Dest);
+           // console.log("TrainTime input: " +trainTime);
+           // console.log("Frequency input: " +frequency);
   
-  
+           //step - 7
+           // convert times and calculate the mins to next Train)
            // First Time (pushed back 1 year to make sure it comes before current time)
            var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
-           console.log(firstTimeConverted);
+           // console.log(firstTimeConverted);
   
            // Current Time
            var currentTime = moment();
-           console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+           // console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
   
            // Difference between the times
            var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
-           console.log("DIFFERENCE IN TIME: " + diffTime);
+           // console.log("DIFFERENCE IN TIME: " + diffTime);
   
            // Time apart (remainder)
            var tRemainder = diffTime % frequency;
-           console.log(tRemainder);
+           // console.log(tRemainder);
   
            // Minute Until Train
            var tMinutesTillTrain = frequency - tRemainder;
-           console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
+           // console.log("MINUTES TILL TRAIN: " + tMinutesTillTrain);
   
            // Next Train
            var nextTrain = moment().add(tMinutesTillTrain, "minutes");
-           console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
-           console.log("The value of next Train = " + nextTrain);
+           // console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
+           // console.log("The value of next Train = " + nextTrain);
   
        
            $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + Dest + "</td><td>" +
        
             frequency + "</td><td>" + moment(nextTrain).format("hh:mm") + "</td><td>" + tMinutesTillTrain + "</td></tr>");
-      
-          // $("#train-table > tbody").append("<tr><td>" + trainName + "</td><td>" + Dest + "</td><td>" +
-          // frequency + "</td><td>" + nextTrain + "</td><td>" + tMinutesTillTrain + "</td></tr>");
-      
        })
   
   
