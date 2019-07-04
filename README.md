@@ -10,6 +10,7 @@ Date: June 28, 2019
 Purpose:  
 Create a train schedule application that incorporates a Firebase hosted database at captures the arrival and departure times of the trains. Using these times, the arrival time of the next train of that particular train, say the (A-Train) is calculated and shown on screen. 
 To see the app visit: https://rthorpesr.github.io/TrainSchedule/
+
 How it works:
 
 1.)	The user is presented a Train Schedule webpage.
