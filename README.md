@@ -8,7 +8,7 @@ Date: June 28, 2019
 
 
 Purpose:  
-Create a train schedule application that incorporates a Firebase hosted database at captures the arrival and departure times of the trains. Using these times, the arrival time of the next train of that particular train, say the (A-Train) is calculated and shown on screen. 
+Create a train schedule application that incorporates a Firebase hosted database thatcaptures the arrival and departure times of the trains. Using these times, the arrival time of the next train of that particular train, say the (A-Train) is calculated and shown on screen. 
 To see the app visit: https://rthorpesr.github.io/TrainSchedule/
 
 How it works:
@@ -44,7 +44,13 @@ Technology used
 5.)	Firebase (database)
 
 
-
 ** This app was made responsive for cell-phones and small tablets.
+
+Problem: 
+1.) How to create a continuous train schedule showing all of the trains and continously updating the time of arrival of the next train of that type and minutes away from the station (real-time).
+
+Solved:
+1.) I used the math functions provided in Javascript to come up with the time of the arrival of the new time, given I needed to always know the current time. I used a function to get current time in my calculations. 
+2.) To get minutes away, I used the frequency of the time the train is schedule to leave and the module function to get the remainer, given that the remainer will be time left to next train. 
 
 
